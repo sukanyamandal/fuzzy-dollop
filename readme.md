@@ -22,40 +22,42 @@ This decentralized application (DApp) leverages the power of federated learning 
 - **Ganache:** A local blockchain emulator for development and testing.
 
 ## Project Structure
-'''
-smart-grid-dapp/
-├── contracts
-│   └── DataSharing.sol
-├── migrations
-│   ├── 2_deploy_contracts.js
-│   └── 1_initial_migration.js
-├── models
-│   ├── handler
-│   │   └── custom_handler.py
-│   └── model.py
-├── static
-│   ├── js
-│   │   └── scripts.js
-│   └── css
-│       └── styles.css
-├── templates
-│   └── index.html
-├── utils
-│   ├── blockchain.py
-│   └── prediction.py
-├── tests
-│   ├── test_blockchain.py
-│   └── test_prediction.py
-├── setup
-│   ├── setup_python.sh
-│   ├── setup_torchserve.sh
-│   └── setup_node.sh
-├── app.py
-├── federated_learning.py
-├── requirements.txt
-├── Dockerfile
-└── docker-compose.yml
-'''
+```
+📦 fuzzy-dollop
+├─ Dockerfile
+├─ LICENSE
+├─ app.py
+├─ contracts
+│  └─ DataSharing.sol
+├─ docker-compose.yml
+├─ federated_learning.py
+├─ migrations
+│  ├─ 1_initial_migration.js
+│  └─ 2_deploy_contracts.js
+├─ models
+│  ├─ handler
+│  │  └─ custom_handler.py
+│  └─ model.py
+├─ readme.md
+├─ requirements.txt
+├─ setup
+│  ├─ setup_node.sh
+│  ├─ setup_python.sh
+│  └─ setup_torchserve.sh
+├─ static
+│  ├─ css
+│  │  └─ styles.css
+│  └─ js
+│     └─ scripts.js
+├─ templates
+│  └─ index.html
+├─ tests
+│  ├─ test_blockchain.py
+│  └─ test_prediction.py
+└─ utils
+   ├─ blockchain.py
+   └─ prediction.py
+```
 
 ## Getting Started
 
