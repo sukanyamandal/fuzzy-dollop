@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+    depends_on:
+      - blockchain
+      - torchserve
+
+  blockchain:
+    image: trufflesuite/ganache-cli
+    ports:
+      - "8545:8545"
+    command: ganache-cli -p 8545
+
+  torchserve:
+    image: pytorch/torchserve:latest
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    volumes:
+      - ./models:/home/model-server/model-store
+    command: ["torchserve", "--start", "--model-store", "/home/model-server/model-store", "--models", "model.mar"]
