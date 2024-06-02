@@ -22,6 +22,7 @@ This decentralized application (DApp) leverages the power of federated learning 
 - **Ganache:** A local blockchain emulator for development and testing.
 
 ## Project Structure
+'''
 smart-grid-dapp/
 ├── contracts
 │   └── DataSharing.sol
@@ -54,6 +55,7 @@ smart-grid-dapp/
 ├── requirements.txt
 ├── Dockerfile
 └── docker-compose.yml
+'''
 
 ## Getting Started
 
